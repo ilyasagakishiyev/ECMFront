@@ -9,14 +9,14 @@ import { ProductService } from 'src/app/Services/Products/ProductService';
 })
 export class ProductsComponent implements OnInit {
   private subscription: Subscription | undefined;
-  data: any;
+  products: any;
   constructor(private productService: ProductService) { }
 
   async ngOnInit() {
     this.subscription = (await this.productService.getProducts()).subscribe(
       (response) => {
-        this.data = response;
-        console.log(this.data);
+        this.products = response;
+        console.log(this.products);
 
       },
       (error) => {
