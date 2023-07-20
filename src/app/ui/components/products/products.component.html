@@ -4,11 +4,8 @@
       <h2 class="d-flex align-items-center mb-0">FEATURED PRODUCTS</h2>
     </div>
     <div class="s3-main">
-      <div id="carouselHome4" class="owl-carousel owl-theme">
-        <div class="d-flex">
-          <div *ngFor="let data of products"
-            class="item shadow-sm me-3 d-flex align-items-center justify-content-evenly"
-          >
+      <!-- <div id="carouselHome4" class="owl-carousel owl-theme">
+          <div class="item shadow-sm me-3 d-flex align-items-center justify-content-evenly">
             <img
               src="../../../../assets/images/products/product-1.jpg"
               alt=""
@@ -38,8 +35,39 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
+      </div> -->
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img src="https://via.placeholder.com/600/92c952" alt="img 1" />
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img src="https://via.placeholder.com/600/771796" alt="img 2" />
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img src="https://via.placeholder.com/600/24f355" alt="img 3" />
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img src="https://via.placeholder.com/600/d32776" alt="img 4" />
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img src="https://via.placeholder.com/600/f66b97" alt="img 5" />
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+          <div class="slide">
+            <img src="https://via.placeholder.com/600/56a8c2" alt="img 6" />
+          </div>
+        </ng-template>
+      </owl-carousel-o>
     </div>
   </div>
 </div>
